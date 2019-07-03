@@ -1,0 +1,14 @@
+Olá $name!
+
+Aqui está a lista de compras do supermercado.
+
+Lista de compras:
+#set($count = 1)
+#foreach($item in $lista)
+#if($item == 'Arroz')
+$count - $item (não esquecer)
+#else
+$count - $item
+#end
+#set($count = $count + 1)
+#end
